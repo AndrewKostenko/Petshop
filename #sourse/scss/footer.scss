@@ -1,0 +1,121 @@
+.footer {
+	// .footer_inner
+	&_inner {
+		display: grid;
+		grid-template-columns: 340px 1fr;
+		grid-gap: 94px;
+		padding-top: 94px;
+		border-top: 1px solid #fee4df;
+		margin-bottom: 40px;
+		@media (max-width: 1000px) {
+			grid-template-columns: 1fr;
+			padding-top: 60px;
+			grid-gap: 60px;
+		}
+		@media (max-width: 600px) {
+			padding-top: 40px;
+			grid-gap: 40px;
+		}
+	}
+	// .footer_main
+	&_main {
+	}
+	// .footer_logo
+	&_logo {
+		display: flex;
+		align-items: center;
+		grid-gap: 15px;
+		margin-bottom: 53px;
+		margin-left: 4px;
+		@media (max-width: 1000px) {
+			margin-bottom: 35px;
+		}
+		@media (max-width: 600px) {
+			margin-bottom: 20px;
+			margin-left: 0;
+		}
+	}
+	// .footer_img
+	&_img {
+	}
+	// .footer_name
+	&_name {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32 / 24 * 100%;
+		color: #42766c;
+	}
+	// .footer_text
+	&_text {
+		margin-bottom: 24px;
+		text-align: left;
+		@media (max-width: 1000px) {
+			margin: 0 0 24px 0;
+		}
+		@media (max-width: 600px) {
+			margin-bottom: 15px;
+		}
+	}
+	// .footer_contacts
+	&_contacts {
+		display: flex;
+		align-items: center;
+		grid-gap: 38px;
+	}
+	// .footer_contact
+	&_contact {
+		display: block;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+	}
+	// .footer_lists
+	&_lists {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		grid-gap: 30px;
+		margin: 3px 21px 0px 0px;
+	}
+	// .footer_list
+	&_list {
+		&:nth-child(2) {
+			margin-left: 37px;
+			@media (max-width: 450px) {
+				margin-left: 0;
+			}
+		}
+		a {
+			display: block;
+			margin-bottom: 25px;
+			line-height: 24 / 16 * 100%;
+			letter-spacing: -0.011em;
+			color: #5a5a5a;
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			@media (max-width: 600px) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	// .footer_list-title
+	&_list-title {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 28 / 20 * 100%;
+		letter-spacing: -0.017em;
+		color: #5a5a5a;
+		margin-bottom: 50px;
+		@media (max-width: 1000px) {
+			margin-bottom: 30px;
+		}
+		@media (max-width: 600px) {
+			margin-bottom: 20px;
+		}
+	}
+}
